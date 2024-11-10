@@ -1,44 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Static Resume Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Static Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="resume-form">
-        <h2>Static Resume Form</h2>
-        <form action="backend.php">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="goku.jpg" alt="Image">
+                </div>
+                <h2>Abdul Wahid <br><span>Web Developer</span></h2>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                       <span class="icon"> <i class="fa fa-phone" aria-hidden="true"></i></span>
+                       <span class="text">+92 310-3898-237</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                        <span class="text">wahidnarejo11234@gmail.com</span>
+                     </li>
+                     <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text">www.mywebsite.com</span>
+                     </li>
+                     <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text">www.linkdin.com/me</span>
+                     </li>
+                     <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Karachi,Pakistan</span>
+                     </li>
+                </ul>
             </div>
-            <div class="form-group">
-                <label for="contact">Phone Number:</label>
-                <input type="text" id="contact" name="contact" required pattern="[0-9]{10}">
+
+            <div class="contactInfo education">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                       
+                            <h5> 2024 </h5>
+                            <h4>Web Developer And Cloud Applied Generative AI Engineering </h4>
+                            <h4> At GIAIC</h4>
+                           </li>
+                           <li>
+                      <h5>2020-2021</h5>
+                      <h4>Matric</h4>
+                      <h4>Minaret Model School</h4>
+                     </li>
+                    <li>
+                        <h5>2022-2023</h5>
+                        <h4>Intermediate</h4>
+                        <h4>S.M Govt Science College</h4>
+                       </li>
+                    
+                </ul>
+                
             </div>
-            <div class="form-group">
-                <label for="education">Education:</label>
-                <textarea id="education" name="education" required></textarea>
+            <div class="contactInfo language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percent">
+                        <div style="width:70%;"></div>
+                    </span>
+                    </li>
+                    <li>
+                        <span class="text">Urdu</span>
+                        <span class="percent">
+                        <div style="width:90%;"></div>
+                    </span>
+                    </li>
+                    
+                    </ul>
+                    </div>
+        </div>
+        <div class="right_side">
+            <div class="about">
+                <h2 class="title2">PROFILE</h2>
+                <p> Hi! I'm Abdul wahid from Karachi, Pakistan. After completing my Intermediate, I discovered my passion for technology and haven't looked back since. With expertise in HTML, CSS, JavaScript, TypeScript, Tailwind CSS, Next.js, React, and Figma I create modern, responsive websites that captivate users. I believe in continuous learning and enjoy working on projects that challenge me and enhance my skills.</p>
             </div>
-            <div class="form-group">
-                <label for="skills">Skills:</label>
-                <textarea id="skills" name="skills" required></textarea>
+            <div class="about">
+                <h2 class="title2">EXPERIENCE</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h6>2023-2024</h6>
+                        <h6>learning</h6>
+                    </div>
+                    <div class="text">
+                        <h4>Frontend Developer</h4>
+                        <p>I'm learning frontend development 💻, starting with HTML, CSS, and JavaScript 🌐. I'm focusing on making websites look good and work well on all devices 📱💻. As I grow, I plan to explore tools like React and Vue 🔧 to create even better user experiences. It's all about continuous learning and staying up-to-date with the latest trends 🚀!.</p>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="form-group">
-                <label for="work-experience">Work Experience:</label>
-                <textarea id="work-experience" name="work-experience" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </div>
-        </form>
+<div class="about skills">
+    <h2 class="title2">PROFESSIONAL SKILLS</h2>
+  <div class="box">
+    <h4>Html</h4>
+    <div class="percent">
+        <div style="width:90%;"></div>
     </div>
-    <script src="index.ts"></script>
+  </div>
+  <div class="box">
+    <h4>Css</h4>
+    <div class="percent">
+        <div style="width:75%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>TypeScript</h4>
+    <div class="percent">
+        <div style="width:70%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>JavaScript</h4>
+    <div class="percent">
+        <div style="width:70%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>Next JS</h4>
+    <div class="percent">
+        <div style="width:90%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>React</h4>
+    <div class="percent">
+        <div style="width:70%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>Tailwind Css</h4>
+    <div class="percent">
+        <div style="width:90%;"></div>
+    </div>
+  </div>
+  <div class="box">
+    <h4>UI/UX Design</h4>
+    <div class="percent">
+        <div style="width:70%;"></div>
+    </div>
+  </div>
+</div>
+<div class="about interest">
+<h2 class="title2">INTEREST</h2>
+<ul>
+    <li><i class="fa fa-book" aria-hidden="true"></i>Reading</li>
+    <li><i class="fa fa-pencil" aria-hidden="true"></i>Writing</li>
+  
+</ul>
+</div>
+        </div>
+    </div>
+    
 </body>
 </html>
